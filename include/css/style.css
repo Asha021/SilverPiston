@@ -1135,7 +1135,7 @@ padding: 10px 0px;
 
 
 /* ===== Common Mobile Devices (≤ 768px) ===== */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1235px) {
   header , .joinus-next-box ,.about-section-2  {
     padding: 20px;
   }
