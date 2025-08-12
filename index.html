@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
   <title>MR Sastanebal</title>
 <link rel="stylesheet" href="/include/css/style.css">
 <link rel="stylesheet" href="/include/css/about.css">
@@ -766,14 +768,14 @@ Do your thing. Lead the change. Join Silverpiston.
             boxes.forEach((box, i) => {
               setTimeout(() => {
                 box.classList.add("animate");
-              }, i * 300); // 300ms delay between each box
+              }, i * 100); // 300ms delay between each box
             });
             observer.disconnect(); // Trigger once
           }
         });
       },
       {
-        threshold: 0.3, // Trigger when 30% is visible
+        threshold: 0.1, // Trigger when 30% is visible
       }
     );
 
@@ -798,7 +800,7 @@ Do your thing. Lead the change. Join Silverpiston.
         });
       },
       {
-        threshold: 0.3, // Trigger when 30% is visible
+        threshold: 0.1, // Trigger when 30% is visible
       }
     );
 
