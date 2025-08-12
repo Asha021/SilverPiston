@@ -1284,6 +1284,179 @@ padding: 10px 0px;
 
 
   .header-banner h1 {
+    font-size: 70px;
+    width: fit-content;
+    border-bottom: 3px solid var(--secondary-color);
+    font-family: var(--primary-font-family);
+  }
+
+  .header-banner h4 {
+    color: var(--secondary-color);
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  .aboutsection-icons-db,
+  .impactsection-icons-db {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+/* background-color: red; */
+  }
+  .impactsection-icons-db .impactsection-icons-db-box{
+    padding:39px;
+  }
+
+.aboutsection-icons-db-box {
+  background-color: transparent; /* green se hatake white ya transparent */
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  */
+
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* hover par shadow aur deep */
+  transition: box-shadow 0.3s ease; /* smooth transition */
+}
+
+
+.aboutsection-icons-db-box h5 {
+  font-size: 14px;
+
+  margin: 0;
+
+}
+
+  .brand-box {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    /* background-color: green; */
+  }
+
+  .brand-content {
+    margin-top: 10px;
+  }
+
+  .home-page {
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+   .home-page .scrolling-text {
+    align-items: center;
+    justify-content: center;
+    padding-left: 5px ;
+    padding-right: 10px;
+       /* .scrolling-text {
+      position: absolute;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: center;
+      padding-left: 30px;
+      padding-top: 100px;
+    } */
+  }
+
+  .text-item {
+    font-size: 40px;
+    line-height: 60px;
+  }
+
+  .left-side {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  header , .joinus-next-box ,.about-section-2  {
+    padding: 20px;
+  }
+  section{
+    padding: 0px;
+
+  }
+  .impact-para{
+    padding: 20px;
+  }
+  .joinus-boxes{
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  .join-us .joinus-img{
+    padding:50px 20px ;
+    /* height: fit-content; */
+    background-repeat: no-repeat;
+  }
+  .joinus-img h3{
+    /* line-height: normal; */
+  }
+  .navbar {
+    display: block;
+    max-height: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    background-color: #2F2A33;
+    width: 100%;
+    transition: max-height 0.4s ease;
+  }
+
+  .navbar.show {
+    max-height: 400px;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  .menu-icon {
+    display: block;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  .about-section,
+  .aboutsection-end {
+    flex-direction: column;
+    height: fit-content;
+    padding: 10px 20px;
+  }
+
+  .impact {
+    padding: 10px 20px;
+    /* margin-top: 20px; */
+  }
+
+  .header-banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+  .brand-box{
+    gap: 10px;
+  }
+  .brand-content{
+    flex: auto;
+  }
+
+  .key-engagements{
+  background-color: var(--secondary-color);
+  padding: 20px;
+}
+
+
+  .header-banner h1 {
     font-size: 45px;
     width: fit-content;
     border-bottom: 3px solid var(--secondary-color);
