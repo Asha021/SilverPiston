@@ -216,16 +216,18 @@ padding: 40px 0;
       flex-direction: column;
       align-items: start;
       justify-content: center;
-      padding-left: 30px;
       padding-top: 100px;
-    }
+      padding-left: 100px;
 
+    }
+    
     .text-item {
       font-size: 132px;
+      /* padding-left: 30px; */
       color: white;
       font-family: var(--primary-font-family);
-      line-height: 122px;
-      text-align: center;
+      line-height: 150px;
+      text-align: start;
       position: absolute;
       opacity: 0;
     }
