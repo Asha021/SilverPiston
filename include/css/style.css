@@ -348,6 +348,7 @@ font-family: var(--secondary-font-family);
     /* justify-content: center; */
     flex-direction: column;
     gap: 0px;
+    padding: 5px;
 }
 
 
@@ -1230,7 +1231,7 @@ padding: 10px 0px;
 /* background-color: red; */
   }
   .impactsection-icons-db .impactsection-icons-db-box{
-    padding:20px;
+    padding:39px;
   }
 
 .aboutsection-icons-db-box {
@@ -1267,13 +1268,27 @@ padding: 10px 0px;
     justify-content: center;
   }
 
-  .scrolling-text {
+   .home-page .scrolling-text {
     align-items: center;
     justify-content: center;
+    padding-left: 5px ;
+    padding-right: 10px;
+       /* .scrolling-text {
+      position: absolute;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: center;
+      padding-left: 30px;
+      padding-top: 100px;
+    } */
   }
 
   .text-item {
-    font-size: 60px;
+    font-size: 40px;
     line-height: 60px;
   }
 
