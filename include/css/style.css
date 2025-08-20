@@ -38,6 +38,9 @@ section{
 
   padding: 0px 120px;
 }
+.paragraph-of-box{
+  font-family: var(--secondary-font-family);
+}
 
 /* Loader full screen */
 #loader {
@@ -77,8 +80,12 @@ section{
       position: absolute;
       width: 100%;
      max-width: 1520px;
+     position: fixed;
+top: 0;
+left: 0;
+right: 0;
 
-      z-index: 10;
+      z-index: 10000;
     }
       .header-box{
       display: flex;
@@ -115,11 +122,17 @@ section{
     }
 
     .btn {
-      background: #FF7F00;
-      padding: 8px 20px;
+      background-color: #FF7F00;
+      padding: 10px 30px;
       border: none;
       border-radius: 1px;
       cursor: pointer;
+        transition: background-color 0.3s ease; /* smoothness added */
+
+    }
+
+    .btn:hover{
+      background-color:#FF4F01;
     }
 
     .menu-icon {
@@ -172,10 +185,7 @@ section{
 .navbar ul li a:hover {
   color: var(--primary-color);
 }
-.btn:hover{
-  background-color: var(--primary-color);
 
-}
 .navbar ul li a:hover::before,
 .navbar ul li a:hover::after {
   width: 50%;
@@ -198,7 +208,7 @@ padding: 40px 0;
     .header-banner h1{
         font-size: 48px;
         width: fit-content;
-        border-bottom: 2px solid var(--third-color);
+        /* border-bottom: 2px solid var(--third-color); */
         font-family: var(--primary-font-family);
     }
 
@@ -321,7 +331,7 @@ font-family: var(--secondary-font-family);
     background-color: #FF4F01 ;
     padding: 30px;
 height: fit-content;
-  animation: fadeIn 2s ease-in-out;
+  /* animation: fadeIn 2s ease-in-out; */
 
 color: white;
 }
@@ -446,9 +456,11 @@ padding: 10px 0px;
 .impactsection-icons-db .impactsection-icons-db-box p{
     font-size: 18px;
     font-family: var(--secondary-font-family);
-    font-weight: 400;
+    font-family: "Myfont2";
+    font-weight: 100;
     padding-bottom: 20px 0;
     line-height: 28px;
+opacity: 0.7;
     /* letter-spacing: 1px; */
 }
 
@@ -462,9 +474,9 @@ padding: 10px 0px;
   margin: 20px 0;
   border-radius: 1px;
   overflow: hidden; /* important if content moves */
-  opacity: 0;
-  transform: translateY(100px);
-  transition: opacity 0.8s ease, transform 0.8s ease;
+  /* opacity: 0; */
+  /* transform: translateY(100px); */
+  /* transition: opacity 0.8s ease, transform 0.8s ease; */
 }
 
 
@@ -595,7 +607,7 @@ padding: 10px 0px;
   flex-wrap: wrap;
   align-items: center;
   padding: 20px 40px;
-  border-bottom: 3px solid #C4C4C4;
+  border-bottom: 1.5px solid #C4C4C4;
   transition: background 0.3s ease;
   gap: 30px;
   /* border-radius: 4px; */
@@ -789,29 +801,42 @@ padding: 10px 0px;
 
 .toggle-icon {
   font-size: 32px;
-  font-weight: bold;
+  font-weight: thin;
   color: #fff;
   transition: transform 0.3s ease;
+  transition: color  0.3s ease;
+}
+
+.toggle-icon:hover {
+  /* font-size: 32px;
+  font-weight: bold; */
+  color: #FF7F00;
+
+  /* transition: transform 0.3s ease; */
 }
 
 /* Hidden content by default */
 .job-content {
   max-height: 0;
   overflow: hidden;
-  opacity: 0;
-  transition: max-height 0.4s ease, opacity 0.3s ease;
+    letter-spacing: 1px;
+  font-size: 18px ;
+  line-height: 28px;
+  opacity: 71%;
+  /* opacity: 0; */
+  transition: max-height 0.4s ease;
 }
 
 /* When active (open) */
 .job-card.active .job-content {
   max-height: 600px;
-  opacity: 1;
-  letter-spacing: 1px;
-  font-size: 18px ;
-  line-height: 28px;
-  opacity: 71%;
+  /* opacity: 1; */
+  /* letter-spacing: 1px; */
+  /* font-size: 18px ; */
+  /* line-height: 28px; */
+  /* opacity: 71%; */
   /* color: v); */
-  margin-top: 20px;
+  /* margin-top: 20px; */
 }
 
 /* Apply button */
@@ -829,7 +854,7 @@ padding: 10px 0px;
 }
 
 .apply-btn:hover {
-  background-color: #e96f00;
+  background-color: #FF4F01;
 }
 .view-buttons{
   color: var(--primary-color);
@@ -869,7 +894,7 @@ padding: 10px 0px;
 .joinus-type{
   color: white;
   font-family: var(--primary-font-family);
-  font-size: 30px;
+  font-size: 24px;
   padding: 50px 0 20px 0px;
 }
 .joinus-next-box{
@@ -1051,7 +1076,7 @@ padding: 10px 0px;
   border-radius: 1px;
   overflow: hidden;
   cursor: pointer;
- transform: translateY(100px);
+ /* transform: translateY(100px); */
   transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
@@ -1286,7 +1311,7 @@ padding: 10px 0px;
   .header-banner h1 {
     font-size: 70px;
     width: fit-content;
-    border-bottom: 3px solid var(--secondary-color);
+    /* border-bottom: 3px solid var(--secondary-color); */
     font-family: var(--primary-font-family);
   }
 
@@ -1459,7 +1484,7 @@ padding: 10px 0px;
   .header-banner h1 {
     font-size: 45px;
     width: fit-content;
-    border-bottom: 3px solid var(--secondary-color);
+    /* border-bottom: 3px solid var(--secondary-color); */
     font-family: var(--primary-font-family);
   }
 
@@ -1604,7 +1629,7 @@ font-size: 20px;
   .header-banner h1 {
     font-size: 30px;
     width: fit-content;
-    border-bottom: 3px solid var(--secondary-color);
+    /* border-bottom: 3px solid var(--secondary-color); */
     font-family: var(--primary-font-family);
   }
 
@@ -1613,4 +1638,72 @@ font-size: 20px;
     font-size: 18px;
     text-align: center;
   }
+}
+
+
+
+.job-card .job-content {
+  max-height: 0;
+  overflow: hidden;
+    letter-spacing: 1px;
+  font-size: 18px ;
+  line-height: 28px;
+  opacity: 71%;
+  /* opacity: 0; */
+  transition: max-height .5s ease;
+}
+
+
+
+
+
+
+.job-card.active .job-content {
+  max-height: 600px; /* adjust as per content */
+  /* transition: max-height 1s ease; */
+
+}
+
+/* toggle icon container */
+.toggle-icon {
+  position: relative;
+  width: 22px;
+  height: 22px;
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.toggle-icon:hover::before,
+.toggle-icon:hover::after {
+  background: #FF7F00;
+}
+/* vertical line (always visible = “|”) */
+.toggle-icon::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 100%;
+  background: white;
+  transition: transform 0.3s ease;
+}
+
+/* horizontal line (−) */
+.toggle-icon::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: white;
+  transform: translateY(-50%) rotate(0deg);
+  transition: transform 0.3s ease;
+}
+
+/* when active → rotate vertical line to hide = minus sign */
+.job-card.active .toggle-icon::before {
+  transform: translateX(-50%) rotate(90deg); /* ghumake vertical ko horizontal jaisa kar do */
 }

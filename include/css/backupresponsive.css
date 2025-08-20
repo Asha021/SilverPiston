@@ -93,7 +93,7 @@
     .header-banner h1{
         font-size: 45px;
         width: fit-content;
-        border-bottom: 3px solid var(--secondary-color);
+        /* border-bottom: 3px solid var(--secondary-color); */
         font-family: var(--primary-font-family);
     }
 
